@@ -8,7 +8,8 @@ export const NAV_LINKS = [
   { label: 'Nosotros', href: '/nosotros', sectionId: 'nosotros' },
   { label: 'Experiencia', href: '/experiencia', sectionId: 'experiencia' },
   { label: 'Clientes', href: '/#clientes', sectionId: 'clientes' },
-  { label: 'Contacto', href: '/nosotros#contacto', sectionId: 'contacto' },
+  { label: 'Contacto', href: '/footer', sectionId: 'footer' },
+  
 ]
 
 export const SERVICIOS_LINKS = [

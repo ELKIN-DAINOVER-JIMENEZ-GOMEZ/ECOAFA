@@ -36,7 +36,18 @@ export default function Navbar() {
   }, [location.pathname])
 
   const handleNavClick = (sectionId: string, href: string) => {
-    if (isHome) {
+    if (sectionId === 'footer') {
+      if (!isHome) {
+        navigate('/#footer-scroll')
+        setTimeout(() => {
+          const el = document.getElementById('footer')
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }, 500)
+      } else {
+        const el = document.getElementById('footer')
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    } else if (isHome) {
       scrollTo(sectionId)
     } else {
       navigate(href)
@@ -71,7 +82,7 @@ export default function Navbar() {
           >
             
             <div className="flex flex-col leading-none">
-              <img src={logo} alt="Logo ECOAFA" className="w-35 h-20 object-contain" />
+              <img src={logo} alt="Logo ECOAFA" className="w-45 h-25 object-contain" />
             </div>
           </Link>
 
@@ -138,13 +149,7 @@ export default function Navbar() {
               </button>
             ))}
 
-            {/* CTA */}
-            <a
-              href="tel:3108795727"
-              className="ml-4 px-5 py-2.5 bg-[#7DC242] hover:bg-[#5A9A2E] text-white font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#7DC242]/30 hover:-translate-y-0.5"
-            >
-              310 879 5727
-            </a>
+            
           </div>
 
           {/* Mobile Hamburger */}

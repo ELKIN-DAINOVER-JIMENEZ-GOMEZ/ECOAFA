@@ -1,5 +1,6 @@
 // src/pages/Nosotros.tsx
 import { useState } from "react";
+import { sendEmail } from "../lib/emailService";
 import {
   MapPin,
   Phone,
@@ -145,10 +146,13 @@ export default function Nosotros() {
     e.preventDefault();
     if (!form.nombre || !form.email || !form.asunto || !form.mensaje) return;
     setStatus("loading");
-    // Reemplaza con: await sendEmail(form)
-    await new Promise((r) => setTimeout(r, 1400));
-    setStatus("success");
-    setForm({ nombre: "", email: "", telefono: "", asunto: "", mensaje: "" });
+    try {
+      await sendEmail(form);
+      setStatus("success");
+      setForm({ nombre: "", email: "", telefono: "", asunto: "", mensaje: "" });
+    } catch {
+      setStatus("error");
+    }
   };
 
   const canSubmit =

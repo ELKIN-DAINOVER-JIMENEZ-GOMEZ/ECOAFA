@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import WhatsAppButton from './components/layout/WhatsAppButton'
+import EmailButton from './components/layout/Emailbutton'
 
 
 import Home from './pages/Home'
@@ -31,6 +32,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       <main>{children}</main>
       <Footer />
       <WhatsAppButton />
+      <EmailButton />
     </>
   )
 }

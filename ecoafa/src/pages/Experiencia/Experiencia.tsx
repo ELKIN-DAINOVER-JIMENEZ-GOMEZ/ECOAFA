@@ -301,20 +301,11 @@ export default function Experiencia() {
           <p className="text-sm font-semibold tracking-[0.35em] uppercase mb-3 text-white/60">
             ECOAFA S.A.S — Desde 2007
           </p>
-          <h1
-            className="text-6xl md:text-7xl font-black uppercase tracking-tight leading-none mb-4"
-            style={{
-              background: "linear-gradient(135deg, #7DC242, #00AEEF)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
+          <h1 className="text-6xl md:text-7xl font-black uppercase tracking-tight leading-none mb-4 "
+            style={{ color: "#00AEEF" }}>
             EXPERIENCIA
           </h1>
-          <div
-            className="w-20 h-1 mx-auto mb-5"
-            style={{ background: "linear-gradient(to right, #7DC242, #00AEEF)" }}
-          />
+          <div className="w-20 h-1 mx-auto mb-5 bg-[#00AEEF]" />
           <p className="text-white/75 text-base max-w-lg mx-auto leading-relaxed">
             Más de 17 años ejecutando proyectos ambientales, forestales, agropecuarios y territoriales a nivel nacional.
           </p>
@@ -334,7 +325,7 @@ export default function Experiencia() {
               <p
                 className="text-3xl font-black"
                 style={{
-                  background: "linear-gradient(135deg, #7DC242, #00AEEF)",
+                  background: "linear-gradient(135deg, #7DC242)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
