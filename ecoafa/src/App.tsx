@@ -14,6 +14,7 @@ import Forestal from './pages/services/Forestal'
 import Territorial from './pages/services/Territorial'
 import Agropecuario from './pages/services/Agropecuario'
 
+
 function PagePlaceholder({ title }: { title: string }) {
   return (
     <main className="min-h-screen bg-[#0f0f0f] flex items-center justify-center pt-20">
@@ -49,6 +50,7 @@ function App() {
           <Route path="/servicios/forestal" element={<Forestal />} />
           <Route path="/servicios/territorial" element={<Territorial />} />
           <Route path="/servicios/agropecuario" element={<Agropecuario />} />
+         
         </Routes>
       </Layout>
     </BrowserRouter>

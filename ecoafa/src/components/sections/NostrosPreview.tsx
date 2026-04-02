@@ -1,6 +1,6 @@
 import { ArrowRight, Calendar, Users, Leaf, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import person from "../../assets/images/slides/person.png";
+import imgNosotros from "../../assets/images/nosotros/imgNosotros.jpeg";
 
 
 const stats = [
@@ -16,7 +16,7 @@ export default function NosotrosPreview() {
       id="nosotros"
       className="relative py-20 overflow-hidden"
       style={{
-        backgroundImage: `url(${person})`,
+        backgroundImage: `url(${imgNosotros})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -78,7 +78,7 @@ export default function NosotrosPreview() {
             />
 
             <img
-              src={person}
+              src={imgNosotros}
               alt="ECOAFA — Consultoría ambiental"
               className="nosotros-photo absolute inset-0 w-full h-full object-cover"
             />

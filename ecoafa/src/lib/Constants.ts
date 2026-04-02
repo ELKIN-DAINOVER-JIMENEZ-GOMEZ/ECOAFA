@@ -9,6 +9,7 @@ export const NAV_LINKS = [
   { label: 'Experiencia', href: '/experiencia', sectionId: 'experiencia' },
   { label: 'Clientes', href: '/#clientes', sectionId: 'clientes' },
   { label: 'Contacto', href: '/footer', sectionId: 'footer' },
+  { label: 'Galeria', href: '/galeria', sectionId: 'galeria' },
   
 ]
 

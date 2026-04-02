@@ -7,6 +7,7 @@ import NosotrosPreview from "../components/sections/NostrosPreview";
 import ServiciosGrid from "../components/sections/ServiciosGrid";
 import ExperienciaCards from "../components/sections/ExperienciaCards";
 import ClientesAccordion from "../components/sections/ClientesAccordion";
+import GaleriaProyectos from "../components/sections/GaleriaProyectos";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <NosotrosPreview />
       <ServiciosGrid />
       <ExperienciaCards />
+      <GaleriaProyectos />
       <ClientesAccordion />
     </>
   );

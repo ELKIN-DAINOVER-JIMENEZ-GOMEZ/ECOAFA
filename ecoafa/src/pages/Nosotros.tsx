@@ -143,17 +143,7 @@ export default function Nosotros() {
                 <p className="text-white font-black text-3xl leading-none">2007</p>
                 <p className="text-white/90 text-xs font-semibold uppercase tracking-wider mt-0.5">Fundada</p>
               </div>
-              <div className="absolute top-5 right-5 flex flex-col gap-2">
-                {['Ambiental', 'Forestal', 'Agropecuario'].map((cat) => (
-                  <span
-                    key={cat}
-                    className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full backdrop-blur-sm"
-                    style={{ backgroundColor: 'rgba(0,174,239,0.8)', color: '#fff' }}
-                  >
-                    {cat}
-                  </span>
-                ))}
-              </div>
+              
             </div>
 
             {/* Texto */}
@@ -203,7 +193,7 @@ export default function Nosotros() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-black/72" />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="absolute top-0 right-0 w-96 h-96 opacity-[0.05] pointer-events-none">
           <svg viewBox="0 0 300 300" fill="none">
             <circle cx="300" cy="0" r="200" stroke="#00AEEF" strokeWidth="1.5" />
