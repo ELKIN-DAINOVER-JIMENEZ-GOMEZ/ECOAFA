@@ -2,7 +2,7 @@ import { useState } from "react";
 import {
   X, FileText, MapPin, Building2,
   ChevronLeft, ChevronRight, Layers,
-  DollarSign, Calendar, Clock, Users,
+  DollarSign, Calendar, Clock, Users, ArrowRight
 } from "lucide-react";
 import { contratos, type Contrato } from "./ExperienciaData";
 import avif1 from "../../assets/images/slides/1.avif";
@@ -186,105 +186,102 @@ function ContratoCard({ contrato, onClick }: { contrato: Contrato; onClick: () =
   const valorFmt = formatCOP(contrato.valor);
 
   return (
-    <div className="flex flex-col">
-      <button
-        onClick={onClick}
-        className="group text-left rounded-2xl overflow-hidden border transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl cursor-pointer focus:outline-none"
-        style={{ backgroundColor: "#fff", borderColor: "rgba(0,0,0,0.08)", boxShadow: "0 2px 16px rgba(0,0,0,0.07)" }}
-        aria-label={`Ver detalles: ${contrato.title}`}
-      >
-        {/* Image */}
-        <div className="relative h-36 overflow-hidden">
-          {!imgError ? (
-            <img
-              src={contrato.imagen}
-              alt={contrato.title}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              onError={() => setImgError(true)}
-            />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center" style={{ background: cat.gradient }}>
-              <FileText size={40} className="text-white opacity-50" />
-            </div>
-          )}
-          <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 25%, rgba(0,0,0,0.6))" }} />
+    <button
+      onClick={onClick}
+      className="group flex flex-col text-left rounded-2xl overflow-hidden bg-white border border-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_-15px_rgba(0,0,0,0.15)] cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 w-full h-full relative"
+    >
+      {/* Img Header */}
+      <div className="relative h-48 w-full overflow-hidden flex-shrink-0 bg-gray-50">
+        {!imgError ? (
+          <img
+            src={contrato.imagen}
+            alt={contrato.title}
+            className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-[1.05]"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="w-full h-full flex flex-col items-center justify-center" style={{ background: cat.gradient }}>
+            <FileText size={42} className="text-white/60 mb-2" />
+            <span className="text-white/70 text-xs font-semibold tracking-widest">{cat.label}</span>
+          </div>
+        )}
+        
+        {/* Gradients to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent opacity-70" />
 
-          {/* Year */}
-          <span className="absolute top-2 right-3 text-xl font-black text-white/50 leading-none drop-shadow">{contrato.year}</span>
-
-          {/* Category badge */}
-          <span
-            className="absolute bottom-2 left-3 text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full"
-            style={{ backgroundColor: `${cat.border}ee`, color: "#fff" }}
-          >
-            {cat.label}
-          </span>
-
-          {/* Valor badge */}
-          {valorFmt && (
-            <span
-              className="absolute bottom-2 right-3 text-xs font-black px-2 py-0.5 rounded-full"
-              style={{ backgroundColor: "rgba(0,0,0,0.6)", color: "#fff" }}
-            >
+        {/* Top Badges: Year & Value */}
+        <div className="absolute top-3 left-3 right-3 flex justify-between items-start">
+          {valorFmt ? (
+            <span className="inline-flex items-center text-xs font-black tracking-wide px-2.5 py-1 rounded-md backdrop-blur-md bg-white/10 text-white border border-white/20 shadow-sm">
               {valorFmt}
             </span>
-          )}
+          ) : <span />}
+          <span className="text-2xl font-black text-white/90 drop-shadow-md">
+            {contrato.year}
+          </span>
         </div>
 
-        {/* Body */}
-        <div className="p-5">
-          {/* Tag chip */}
-          <span
-            className="inline-block text-xs font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full mb-3"
-            style={{ backgroundColor: cat.bg, color: cat.text, border: `1px solid ${cat.border}40` }}
-          >
-            {contrato.tag}
-          </span>
+        {/* Bottom Badges: Category & Tag */}
+        <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between">
+          <div className="flex flex-col gap-1.5 items-start">
+            <span
+              className="px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-widest rounded-sm shadow-sm"
+              style={{ backgroundColor: cat.border, color: "#fff" }}
+            >
+              {cat.label}
+            </span>
+            <span className="text-xs font-semibold text-white/90 drop-shadow flex items-center gap-1.5">
+              <span className="w-1 h-1 rounded-full bg-white opacity-70"></span>
+              {contrato.tag}
+            </span>
+          </div>
+        </div>
+      </div>
 
-          {/* Title — legible, not truncated awkwardly */}
-          <h3
-            className="font-bold text-gray-800 mb-2 leading-snug group-hover:text-gray-900 transition-colors"
-            style={{ fontSize: "0.82rem", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}
-          >
-            {contrato.title}
-          </h3>
+      {/* Body Content */}
+      <div className="p-5 flex flex-col flex-grow">
+        <h3
+          className="text-[0.95rem] font-bold text-gray-800 leading-snug mb-2 group-hover:text-gray-900 transition-colors"
+          style={{ display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}
+        >
+          {contrato.title}
+        </h3>
 
-          <p className="text-gray-500 text-xs leading-relaxed mb-3 line-clamp-2">
-            {contrato.shortDescription}
-          </p>
+        <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">
+          {contrato.shortDescription}
+        </p>
 
-          {/* Mini meta */}
-          <div className="flex flex-wrap gap-x-3 gap-y-1 pt-3 border-t border-gray-100">
-            {contrato.duracion && (
-              <span className="inline-flex items-center gap-1 text-xs text-gray-500">
-                <Clock size={11} className="text-gray-400" />
-                {contrato.duracion}
-              </span>
+        <div className="mt-auto">
+          {/* Metadata */}
+          <div className="grid grid-cols-1 gap-2 pt-4 border-t border-gray-100">
+             {contrato.entidad && (
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <Building2 size={13} className="text-gray-400 flex-shrink-0" />
+                <span className="truncate" title={contrato.entidad}>{contrato.entidad}</span>
+              </div>
             )}
-            {contrato.entidad && (
-              <span className="inline-flex items-center gap-1 text-xs text-gray-400 min-w-0">
-                <Building2 size={11} className="text-gray-400 flex-shrink-0" />
-                <span className="truncate max-w-[150px]">{contrato.entidad}</span>
-              </span>
+            {contrato.duracion && (
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <Clock size={13} className="text-gray-400 flex-shrink-0" />
+                <span>{contrato.duracion}</span>
+              </div>
             )}
           </div>
 
-          <p
-            className="mt-3 text-xs font-semibold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity"
+          {/* Action Link Footer */}
+          <div 
+            className="flex items-center justify-between mt-4 pt-4 text-xs font-bold uppercase tracking-widest transition-colors duration-300"
             style={{ color: cat.border }}
           >
-            Ver detalles →
-          </p>
+            <span className="opacity-80 group-hover:opacity-100">Ver Detalles</span>
+            <div className="w-7 h-7 rounded-full flex items-center justify-center bg-gray-50 group-hover:bg-opacity-10 transform translate-x-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" style={{ backgroundColor: `${cat.border}15` }}>
+              <ArrowRight size={14} style={{ color: cat.border }} />
+            </div>
+          </div>
         </div>
-      </button>
-
-      {/* Year label below */}
-      <div className="mt-3 flex items-center justify-center gap-2">
-        <div className="h-px flex-1" style={{ background: `${cat.border}30` }} />
-        <span className="text-xs font-black tracking-widest" style={{ color: cat.border }}>{contrato.year}</span>
-        <div className="h-px flex-1" style={{ background: `${cat.border}30` }} />
       </div>
-    </div>
+    </button>
   );
 }
 

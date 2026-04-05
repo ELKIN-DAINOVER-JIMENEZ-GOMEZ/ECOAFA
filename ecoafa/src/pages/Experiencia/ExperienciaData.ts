@@ -37,7 +37,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Contratar por el sistema de precios unitarios la reforestación en las zonas de recarga hídrica de ríos y quebradas mediante el establecimiento y aislamiento de bosque protector-productor en veredas Humbo, Cromal, Tananay, La Vega, Nacabal, Itoco Sur, Itoco Norte, Agua fría, Note, Sorquesito, Parque, Guacay, Sorque Grande, Hachital, Granadilla, Barro Blanco, Balcón, Vereda centro del Municipio de Quipama.",
     tag: "Reforestación", color: "#5a9e2f", categoria: "forestal",
     entidad: "Municipio de Quipama - Boyacá", municipio: "Quipama, Boyacá",
-    valor: 748665000, participacion: 100, fechaInicio: "13/12/2010", fechaFin: "09/04/2013", duracion: "2 años 4 meses", smmlv: 1270,
+    participacion: 100, fechaInicio: "13/12/2010", fechaFin: "09/04/2013", duracion: "2 años 4 meses", smmlv: 1270,
     imagen: "https://images.unsplash.com/photo-1621157480717-78bb91574b7a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlY2FyZ2ElMjBoaWRyaWNhfGVufDB8fDB8fHww",
   },
   {
@@ -48,7 +48,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Reforestación y mantenimiento de 31 hectáreas en los predios de Santa María de las Lagunas, Porvenir, Diamante, Finca San Pedro y las Juntas, ubicadas en las veredas la Concepción y la Trinidad, las micro cuencas del Río Siecha Aves del Municipio de Guasca, cercamiento del área reforestada y sensibilización.",
     tag: "31 ha", color: "#5a9e2f", categoria: "forestal",
     entidad: "Alcaldía Municipal de Guasca", municipio: "Guasca, Cundinamarca",
-    valor: 103400178, participacion: 100, fechaInicio: "26/05/2009", fechaFin: "26/09/2009", duracion: "4 meses", smmlv: 208.09,
+    participacion: 100, fechaInicio: "26/05/2009", fechaFin: "26/09/2009", duracion: "4 meses", smmlv: 208.09,
     imagen: "https://plus.unsplash.com/premium_photo-1681140560926-ea741789469a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVmb3Jlc3RhY2lvbnxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -59,7 +59,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Apoyo para el desarrollo del inventario forestal de la nueva zona de interés del proyecto de Modernización de la Refinería de Barrancabermeja, zona externa permiso 6 y 7 y remarcación y actualización permisos 3, 4 y 5, en el marco JOB interno No 463 y acompañamiento de las visitas de la Autoridad Ambiental.",
     tag: "Inventario Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.", municipio: "Barrancabermeja, Santander",
-    valor: 97515400, participacion: 100, fechaInicio: "12/01/2011", fechaFin: "02/03/2011", duracion: "1.5 meses", smmlv: 182.07,
+    participacion: 100, fechaInicio: "12/01/2011", fechaFin: "02/03/2011", duracion: "1.5 meses", smmlv: 182.07,
     imagen: "https://images.unsplash.com/photo-1603274958540-0b58bcfbabfb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGludmVudGFyaW8lMjBmb3Jlc3RhbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -70,7 +70,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Integración de toda la información técnica alusiva a los aspectos forestales y de tierras relacionados con el objeto de la propuesta del apoyo para la implementación de la unidad administrativa especial bosques de Cundinamarca.",
     tag: "Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.", municipio: "Cundinamarca",
-    valor: 4640000, participacion: 100, fechaInicio: "15/10/2009", fechaFin: "15/01/2010", duracion: "3 meses", smmlv: 9.01,
+    participacion: 100, fechaInicio: "15/10/2009", fechaFin: "15/01/2010", duracion: "3 meses", smmlv: 9.01,
     imagen: "https://images.unsplash.com/photo-1426170042593-200f250dfdaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZvcmVzdGFsfGVufDB8fDB8fHww",
   },
   {
@@ -81,7 +81,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Participación en la elaboración de los estudios ambientales para la ampliación del Terminal Petrolero de Coveñas: Realización del Inventario forestal las áreas a ser intervenidas por las actividades de construcción y elaboración de la solicitud de aprovechamiento forestal.",
     tag: "Inventario Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.", municipio: "Coveñas, Sucre",
-    valor: 19142900, participacion: 100, fechaInicio: "17/08/2010", fechaFin: "10/09/2010", duracion: "23 días", smmlv: 37.17,
+    participacion: 100, fechaInicio: "17/08/2010", fechaFin: "10/09/2010", duracion: "23 días", smmlv: 37.17,
     imagen: "https://plus.unsplash.com/premium_photo-1667603008727-9a722d83c89c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9yZXN0YWwlMjBwZXRyb2xlb3xlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -93,7 +93,7 @@ export const contratos: Contrato[] = [
     tag: "281 ha", color: "#5a9e2f", categoria: "forestal",
     entidad: "Alcaldía Municipal de Nobsa", municipio: "Nobsa, Boyacá",
     consorcio: "Consorcio Reforestemos Nobsa",
-    valor: 402581934, participacion: 80, fechaInicio: "28/09/2011", fechaFin: "28/11/2012", duracion: "14 meses", smmlv: 888,
+    participacion: 80, fechaInicio: "28/09/2011", fechaFin: "28/11/2012", duracion: "14 meses", smmlv: 888,
     imagen: "https://images.unsplash.com/photo-1625619454795-d95536c89245?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVmb3Jlc3RhY2lvbnxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -105,7 +105,7 @@ export const contratos: Contrato[] = [
     tag: "Plantación", color: "#5a9e2f", categoria: "forestal",
     entidad: "Inmobiliaria de Cundinamarca", municipio: "Sesquilé, Cundinamarca",
     consorcio: "Consorcio Reforestemos 2009",
-    valor: 55530319, participacion: 50, fechaInicio: "30/11/2009", fechaFin: "09/07/2011", duracion: "1 año 7 meses", smmlv: 103.68,
+    participacion: 50, fechaInicio: "30/11/2009", fechaFin: "09/07/2011", duracion: "1 año 7 meses", smmlv: 103.68,
     imagen: "https://plus.unsplash.com/premium_photo-1681140560806-928e8b9a9a20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJlZm9yZXN0YWNpb258ZW58MHx8MHx8fDA%3D",
   },
   {
@@ -116,7 +116,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Recuperación de áreas degradadas mediante reforestación Protectora, productora en las veredas Chinzaque, Taravita, Nemoga y Centro de Municipio de Fúquene Cundinamarca.",
     tag: "Recuperación", color: "#5a9e2f", categoria: "forestal",
     entidad: "Municipio de Fúquene", municipio: "Fúquene, Cundinamarca",
-    valor: 182845964, participacion: 100, fechaInicio: "09/12/2011", fechaFin: "18/06/2013", duracion: "10 meses", smmlv: 310.17,
+    participacion: 100, fechaInicio: "09/12/2011", fechaFin: "18/06/2013", duracion: "10 meses", smmlv: 310.17,
     imagen: "https://images.unsplash.com/photo-1771180549702-4aa5ac33fb95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJlZm9yZXN0YWNpb258ZW58MHx8MHx8fDA%3D",
   },
   {
@@ -127,7 +127,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Contratar por el sistema de precios unitarios fijos sin fórmula de ajuste, el Establecimiento y aislamiento de (15.5) hectáreas (21.700 árboles) de plantaciones forestales protectoras productoras en las microcuencas de los ríos Zaguea, Trompetas, Chivor, Río Negro y Quebrada el Gusano, así como la construcción de 2.526,5 metros lineales de cerca en alambre de púas, en el municipio de Ubalá.",
     tag: "21.700 árboles", color: "#5a9e2f", categoria: "forestal",
     entidad: "Alcaldía Municipal de Ubalá", municipio: "Ubalá, Cundinamarca",
-    valor: 45131020, participacion: 100, fechaInicio: "26/11/2010", fechaFin: "26/05/2011", duracion: "6 meses", smmlv: 84.26,
+    participacion: 100, fechaInicio: "26/11/2010", fechaFin: "26/05/2011", duracion: "6 meses", smmlv: 84.26,
     imagen: "https://plus.unsplash.com/premium_photo-1681140560624-dc6ad807f7bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVmb3Jlc3RhY2lvbnxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -138,7 +138,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Contratar la implementación de acciones prioritarias de restauración ambiental en áreas identificadas como botaderos a cielo abierto de las inspecciones de San pedro de Jagua, Laguna azul, Santa Rosa y la granja municipal, ubicadas en el municipio de Ubalá.",
     tag: "Restauración", color: "#5a9e2f", categoria: "forestal",
     entidad: "Alcaldía Municipal de Ubalá", municipio: "Ubalá, Cundinamarca",
-    valor: 22995500, participacion: 100, fechaInicio: "07/12/2010", fechaFin: "07/02/2011", duracion: "2 meses", smmlv: 42.93,
+    participacion: 100, fechaInicio: "07/12/2010", fechaFin: "07/02/2011", duracion: "2 meses", smmlv: 42.93,
     imagen: "https://plus.unsplash.com/premium_photo-1748784800108-de80f0c07429?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJhc3VyZXJvc3xlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -149,7 +149,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Establecimiento, mantenimiento y aislamiento de plantaciones forestales, en el municipio de Carmen de Carupa - Cundinamarca, en un área de 25.85ha.",
     tag: "25.85 ha", color: "#5a9e2f", categoria: "forestal",
     entidad: "Alcaldía Municipal de Carmen de Carupa", municipio: "Carmen de Carupa, Cundinamarca",
-    valor: 190541281, participacion: 100, fechaInicio: "17/08/2010", fechaFin: "30/03/2011", duracion: "7 meses", smmlv: 355.75,
+    participacion: 100, fechaInicio: "17/08/2010", fechaFin: "30/03/2011", duracion: "7 meses", smmlv: 355.75,
     imagen: "https://images.unsplash.com/photo-1643730484055-abc29f2de73c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVmb3Jlc3RhY2lvbnxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -160,7 +160,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Contratar la ejecución de obras de reforestación de zonas aledañas a cuencas, microcuencas y nacederos en el ecosistema estratégico, para el abastecimiento de la Población y procesos productivos (cuenca el Chorreron, Cuenca San Martin, Quebrada Buriburi) del Municipio de San Pablo de Borbur.",
     tag: "Cuencas", color: "#5a9e2f", categoria: "forestal",
     entidad: "Alcaldía Municipal de San Pablo de Borbur", municipio: "San Pablo de Borbur, Boyacá",
-    valor: 39749200, participacion: 100, fechaInicio: "07/07/2010", fechaFin: "07/09/2010", duracion: "2 meses", smmlv: 77.18,
+    participacion: 100, fechaInicio: "07/07/2010", fechaFin: "07/09/2010", duracion: "2 meses", smmlv: 77.18,
     imagen: "https://images.unsplash.com/photo-1560707303-4e980ce876ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmFjaW1pZW50byUyMGRlJTIwYWd1YXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -171,7 +171,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Formulación de los planes estratégicos de administración y manejo de siete áreas de Reserva Forestal Protectora jurisdicción de CORPOGUAVIO, como actividades específicas realizó el monitoreo de flora y fauna, caracterización de vegetación, análisis y monitoreo de calidad de aguas, componente de capacitación, y la participación en actividades de diagnóstico y formulación del plan.",
     tag: "Reserva Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "2C Ingenieros S.A.", municipio: "Jurisdicción CORPOGUAVIO",
-    valor: 60000000, participacion: 100, fechaInicio: "28/10/2008", fechaFin: "27/05/2009", duracion: "7 meses", smmlv: 120.75,
+    participacion: 100, fechaInicio: "28/10/2008", fechaFin: "27/05/2009", duracion: "7 meses", smmlv: 120.75,
     imagen: "https://images.unsplash.com/photo-1705765748297-b66f40d96ef6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZsb3JhJTIweSUyMGZhdW5hfGVufDB8fDB8fHww",
   },
   {
@@ -182,7 +182,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Establecimiento de 500 Plántulas y primer mantenimiento de 4.8 hectáreas de la zona de protección hídrica del rio Sáname en predio San Felipe, como parte del convenio 035-2013, entre el municipio de Fosca y la Unidad Administrativa especial Bosques de Cundinamarca.",
     tag: "Protección Hídrica", color: "#5a9e2f", categoria: "forestal",
     entidad: "Alcaldía Municipal de Fosca", municipio: "Fosca, Cundinamarca",
-    valor: 31401794, participacion: 100, fechaInicio: "22/03/2015", fechaFin: "29/12/2015", duracion: "6 meses", smmlv: 48.73,
+    participacion: 100, fechaInicio: "22/03/2015", fechaFin: "29/12/2015", duracion: "6 meses", smmlv: 48.73,
     imagen: "https://plus.unsplash.com/premium_photo-1710628263718-367b1cf5828f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb3RlY2Npb24lMjBoaWRyaWNhfGVufDB8fDB8fHww",
   },
   {
@@ -193,7 +193,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Elaboración del inventario Forestal y fichas forestales y toda documentación necesaria para la obtención del permiso de aprovechamiento forestal.",
     tag: "Aprovechamiento", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.",
-    valor: 2938320, participacion: 100, fechaInicio: "19/07/2014", fechaFin: "19/09/2014", duracion: "2 meses", smmlv: 4.77,
+    participacion: 100, fechaInicio: "19/07/2014", fechaFin: "19/09/2014", duracion: "2 meses", smmlv: 4.77,
     imagen: "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9yZXN0YWx8ZW58MHx8MHx8fDA%3D",
   },
   {
@@ -204,7 +204,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Elaboración del Estudio Forestal y Trámite de Obtención del Permiso de aprovechamiento forestal, para el predio el Rosal, ubicado en Medellín, Antioquia.",
     tag: "Permiso Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.", municipio: "Medellín, Antioquia",
-    valor: 9856000, participacion: 100, fechaInicio: "09/07/2014", fechaFin: "09/08/2014", duracion: "1 mes", smmlv: 16,
+    participacion: 100, fechaInicio: "09/07/2014", fechaFin: "09/08/2014", duracion: "1 mes", smmlv: 16,
     imagen: "https://plus.unsplash.com/premium_photo-1710846907535-f10f16e8d695?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZXN0dWRpbyUyMGZvcmVzdGFsfGVufDB8fDB8fHww",
   },
   {
@@ -215,7 +215,7 @@ export const contratos: Contrato[] = [
     fullDescription: "El contratista se compromete con el Ministerio a realizar la interventoría de los contratos del certificado de incentivo forestal - CIF elaborados por el Ministerio de Agricultura y Desarrollo Rural - MADR, que requieran verificación en campo.",
     tag: "Interventoría CIF", color: "#5a9e2f", categoria: "forestal",
     entidad: "Ministerio de Agricultura", consorcio: "Consorcio Forestal CIF 2015",
-    valor: 599903280, participacion: 50, fechaInicio: "18/06/2015", fechaFin: "30/12/2015", duracion: "6 meses", smmlv: 931.02,
+    participacion: 50, fechaInicio: "18/06/2015", fechaFin: "30/12/2015", duracion: "6 meses", smmlv: 931.02,
     imagen: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&q=80",
   },
   {
@@ -226,7 +226,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Realizar una Plantación con especies Nativas en predios de importancia Hídrica para el Municipio de Bojaca incluyendo suministro de plantas, mano de obra para la plantación, los insumos, la realización de mantenimiento y gestión - educación ambiental.",
     tag: "Especies Nativas", color: "#5a9e2f", categoria: "forestal",
     entidad: "Alcaldía Municipal de Bojacá", municipio: "Bojacá, Cundinamarca",
-    valor: 64731555, participacion: 100, fechaInicio: "02/04/2014", fechaFin: "19/11/2014", duracion: "10 meses", smmlv: 105.08,
+    participacion: 100, fechaInicio: "02/04/2014", fechaFin: "19/11/2014", duracion: "10 meses", smmlv: 105.08,
     imagen: "https://plus.unsplash.com/premium_photo-1681140560624-dc6ad807f7bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVmb3Jlc3RhY2lvbnxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -238,7 +238,7 @@ export const contratos: Contrato[] = [
     tag: "Mantenimiento", color: "#5a9e2f", categoria: "forestal",
     entidad: "CORPOGUAVIO", municipio: "Jurisdicción CORPOGUAVIO",
     consorcio: "Unión Temporal Mantenimientos Ecolinagro",
-    valor: 507628211, participacion: 60, fechaInicio: "07/12/2016", fechaFin: "06/10/2017", duracion: "10 meses", smmlv: 688.11,
+    participacion: 60, fechaInicio: "07/12/2016", fechaFin: "06/10/2017", duracion: "10 meses", smmlv: 688.11,
     imagen: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=600&q=80",
   },
   {
@@ -249,7 +249,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Prestación de servicios para realizar la reforestación, aislamiento y capacitación, para apoyar la implementación del programa de uso eficiente y ahorro del agua - PUEAA en los municipios de Chipaque, Une y Cáqueza del departamento de Cundinamarca.",
     tag: "PUEAA", color: "#5a9e2f", categoria: "forestal",
     entidad: "Empresas Públicas de Cundinamarca", municipio: "Chipaque, Une y Cáqueza",
-    valor: 118677304, participacion: 100, fechaInicio: "2017", fechaFin: "2017", duracion: "4 meses", smmlv: 143.31,
+    participacion: 100, fechaInicio: "2017", fechaFin: "2017", duracion: "4 meses", smmlv: 143.31,
     imagen: "https://images.unsplash.com/photo-1758400826781-a350d02cda6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFob3JybyUyMGFndWF8ZW58MHx8MHx8fDA%3D",
   },
   {
@@ -260,7 +260,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Desarrollo del inventario forestal para los lotes de Ecopetrol, Ocensa y de reserva forestal, así como el acompañamiento a las visitas de la Autoridad Ambiental. En el marco JOB interno No 594.",
     tag: "Ecopetrol", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.",
-    valor: 22739132, participacion: 100, fechaInicio: "12/01/2011", fechaFin: "07/02/2011", duracion: "25 días", smmlv: 42.45,
+    participacion: 100, fechaInicio: "12/01/2011", fechaFin: "07/02/2011", duracion: "25 días", smmlv: 42.45,
     imagen: "https://images.unsplash.com/photo-1756121284360-83cd994fdd2b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW52ZW50YXJpbyUyMGZvcmVzdGFsfGVufDB8fDB8fHww",
   },
   {
@@ -271,7 +271,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Apoyo para el desarrollo del Inventario forestal de la zona de interés del Proyecto de Modernización de la Refinería de Barrancabermeja para el desarrollo y elaboración de la solicitud de aprovechamiento forestal y acompañamiento a las visitas de la autoridad ambiental. En el marco JOB Interno 463.",
     tag: "Inventario Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.", municipio: "Barrancabermeja, Santander",
-    valor: 20000000, participacion: 100, fechaInicio: "02/08/2010", fechaFin: "31/08/2010", duracion: "29 días", smmlv: 38.83,
+    participacion: 100, fechaInicio: "02/08/2010", fechaFin: "31/08/2010", duracion: "29 días", smmlv: 38.83,
     imagen: "https://images.unsplash.com/photo-1765547683320-53a501834d5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aW52ZW50YXJpbyUyMGZvcmVzdGFsfGVufDB8fDB8fHww",
   },
   {
@@ -282,7 +282,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Inventario forestal de las áreas a ser intervenidas por las actividades de ampliación al TNP y elaboración de la solicitud de permiso de aprovechamiento forestal. En el marco del JOB interno 580.",
     tag: "Inventario Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.",
-    valor: 5416040, participacion: 100, fechaInicio: "14/06/2010", fechaFin: "30/07/2010", duracion: "46 días", smmlv: 10.52,
+    participacion: 100, fechaInicio: "14/06/2010", fechaFin: "30/07/2010", duracion: "46 días", smmlv: 10.52,
     imagen: "https://images.unsplash.com/photo-1581852752237-f4536d7c9197?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW52ZW50YXJpbyUyMGZvcmVzdGFsfGVufDB8fDB8fHww",
   },
   {
@@ -293,7 +293,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Prestación de servicios con el fin de realizar el Inventario forestal de la zona de interés del Proyecto de Modernización de la Refinería de Barrancabermeja. En el marco del subcontrato No. 164-123939-02-CH 807, y elaboración de la solicitud de permiso de aprovechamiento forestal.",
     tag: "Inventario Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.",
-    valor: 6960000, participacion: 100, fechaInicio: "05/10/2009", fechaFin: "31/01/2010", duracion: "4 meses", smmlv: 13.51,
+    participacion: 100, fechaInicio: "05/10/2009", fechaFin: "31/01/2010", duracion: "4 meses", smmlv: 13.51,
     imagen: "https://plus.unsplash.com/premium_photo-1675177698627-62e3852abf15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGludmVudGFyaW8lMjBmb3Jlc3RhbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -304,7 +304,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Desarrollo del inventario forestal para el lote correspondiente al Puerto de Morrosquillo, así como el acompañamiento a las visitas de la Autoridad Ambiental. En el marco JOB interno No 625.",
     tag: "Inventario Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.", municipio: "Morrosquillo, Sucre",
-    valor: 27763788, participacion: 100, fechaInicio: "11/01/2011", fechaFin: "28/02/2011", duracion: "50 días", smmlv: 51.84,
+    participacion: 100, fechaInicio: "11/01/2011", fechaFin: "28/02/2011", duracion: "50 días", smmlv: 51.84,
     imagen: "https://plus.unsplash.com/premium_photo-1663133543827-3677f308c3e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW52ZW50YXJpbyUyMGZvcmVzdGFsfGVufDB8fDB8fHww",
   },
   {
@@ -315,7 +315,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Prestación de servicios con el fin de realizar el Inventario forestal de la zona de interés del Puerto Bahia Colombia, y elaboración de la solicitud de permiso de aprovechamiento forestal.",
     tag: "Inventario Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.",
-    valor: 2320000, participacion: 100, fechaInicio: "17/09/2009", fechaFin: "30/11/2009", duracion: "43 días", smmlv: 4.67,
+    participacion: 100, fechaInicio: "17/09/2009", fechaFin: "30/11/2009", duracion: "43 días", smmlv: 4.67,
     imagen: "https://images.unsplash.com/photo-1561680999-30d09f54cb90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGludmVudGFyaW8lMjBmb3Jlc3RhbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -326,7 +326,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Integrar la información necesaria para obtener el permiso de aprovechamiento forestal único que se requiere en el lote Casa Blanca (Cartagena). Identificar la fauna asociada a las diferentes unidades de cobertura vegetal y usos del suelo. El servicio incluye la realización del inventario forestal en campo, la elaboración del informe correspondiente y de la solicitud de permiso de aprovechamiento forestal único.",
     tag: "Inventario Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Araújo Ibarra & Asociados S.A.", municipio: "Cartagena, Bolívar",
-    valor: 39486400, participacion: 100, fechaInicio: "01/04/2011", fechaFin: "15/04/2011", duracion: "15 días", smmlv: 73.72,
+    participacion: 100, fechaInicio: "01/04/2011", fechaFin: "15/04/2011", duracion: "15 días", smmlv: 73.72,
     imagen: "https://images.unsplash.com/photo-1748289974175-34038136ac02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW52ZW50YXJpbyUyMGZvcmVzdGFsfGVufDB8fDB8fHww",
   },
   {
@@ -337,7 +337,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Realizar las actividades de inventario forestal y elaboración de los documentos pertinentes de acuerdo a la normatividad ambiental vigente aplicable para la presentación y obtención del permiso de aprovechamiento forestal y levantamiento de vedas en las zonas de disposición de materiales sobrantes de excavación ZODME'S.",
     tag: "Inventario Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Consorcio Constructor POB (JV-POB)",
-    valor: 121800000, participacion: 100, fechaInicio: "08/07/2016", fechaFin: "30/11/2016", duracion: "4 meses", smmlv: 176.66,
+    participacion: 100, fechaInicio: "08/07/2016", fechaFin: "30/11/2016", duracion: "4 meses", smmlv: 176.66,
     imagen: "https://images.unsplash.com/photo-1580057004068-33843c391e61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvcmVzdGFsJTIwZG9jdW1lbnRvc3xlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -348,7 +348,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Adelantar las actividades finales de 'campo' y 'oficina' conforme a la guía para el desarrollo de la ordenación forestal integral y sostenible en Colombia, que permita consolidar el plan de ordenación forestal del departamento del Atlántico, teniendo en cuenta las modificaciones que ha sufrido el territorio en virtud del cambio climático.",
     tag: "Ordenación Forestal", color: "#5a9e2f", categoria: "forestal",
     entidad: "Corporación Autónoma Regional del Atlántico C.R.A.", municipio: "Atlántico",
-    valor: 849933700, participacion: 100, fechaInicio: "07/03/2017", fechaFin: "14/03/2018", duracion: "7 meses", smmlv: 1574.33,
+    participacion: 100, fechaInicio: "07/03/2017", fechaFin: "14/03/2018", duracion: "7 meses", smmlv: 1574.33,
     imagen: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VsdGl2b3xlbnwwfHwwfHx8MA%3D%3D",
   },
 
@@ -677,7 +677,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Implementación de modelos silvopastoriles y Agroforestales para la recuperación y estabilización de suelos dentro del componente productivo en la zona de ladera del municipio de Carmen de Carupa del departamento de Cundinamarca.",
     tag: "Silvopastoril", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Carmen de Carupa", municipio: "Carmen de Carupa, Cundinamarca",
-    valor: 150259000, participacion: 100, fechaInicio: "20/06/2011", fechaFin: "20/06/2012", duracion: "12 meses", smmlv: 265.15,
+    participacion: 100, fechaInicio: "20/06/2011", fechaFin: "20/06/2012", duracion: "12 meses", smmlv: 265.15,
     imagen: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80",
   },
   {
@@ -689,7 +689,7 @@ export const contratos: Contrato[] = [
     tag: "Modelos Productivos", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Cucunuba", municipio: "Cucunuba, Cundinamarca",
     consorcio: "Consorcio Reforestemos Cucunuba",
-    valor: 109418712, participacion: 50, fechaInicio: "24/07/2009", fechaFin: "24/01/2010", duracion: "6 meses", smmlv: 106.23,
+    participacion: 50, fechaInicio: "24/07/2009", fechaFin: "24/01/2010", duracion: "6 meses", smmlv: 106.23,
     imagen: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&q=80",
   },
   {
@@ -701,7 +701,7 @@ export const contratos: Contrato[] = [
     tag: "Semiestabulación", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachalá", municipio: "Gachalá, Cundinamarca",
     consorcio: "Consorcio Constructores Gachalá",
-    valor: 304807312, participacion: 50, fechaInicio: "02/12/2008", fechaFin: "02/08/2009", duracion: "11 meses", smmlv: 613.42,
+    participacion: 50, fechaInicio: "02/12/2008", fechaFin: "02/08/2009", duracion: "11 meses", smmlv: 613.42,
     imagen: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=600&q=80",
   },
   {
@@ -712,7 +712,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Prestación de servicios para la sincronización e inseminación artificial de 100 hembras aptas reproductivamente en el Municipio de Gachalá Cundinamarca.",
     tag: "Mejoramiento Genético", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachalá", municipio: "Gachalá, Cundinamarca",
-    valor: 10000000, participacion: 100, fechaInicio: "02/07/2008", fechaFin: "23/10/2008", duracion: "3 meses 25 días", smmlv: 21.67,
+    participacion: 100, fechaInicio: "02/07/2008", fechaFin: "23/10/2008", duracion: "3 meses 25 días", smmlv: 21.67,
     imagen: "data:image/jpeg;base64,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",
   },
   {
@@ -723,7 +723,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Prestación de servicios de asesoría profesional para la formulación del plan gradual de cumplimiento de la planta de sacrificio municipal del Municipio de Gachalá, Cundinamarca.",
     tag: "Pecuario", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachalá", municipio: "Gachalá, Cundinamarca",
-    valor: 18000000, participacion: 100, fechaInicio: "02/07/2008", fechaFin: "28/10/2008", duracion: "3 meses", smmlv: 39,
+    participacion: 100, fechaInicio: "02/07/2008", fechaFin: "28/10/2008", duracion: "3 meses", smmlv: 39,
     imagen: "https://plus.unsplash.com/premium_photo-1682147517222-2067eca5e436?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGxhbnRhJTIwZGUlMjBzYWNyaWZpY2lvJTIwYW5pbWFsZXN8ZW58MHx8MHx8fDA%3D",
   },
   {
@@ -734,7 +734,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Suministro de implementos e insumos agrícolas para el establecimiento del cultivo de frijol variedad bolo rojo y sabanero, en las veredas piedra gorda, Chinchorro, Guacamayas, El escobal, La florida y San Isidro del municipio de Gachalá.",
     tag: "Insumos Agrícolas", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachalá", municipio: "Gachalá, Cundinamarca",
-    valor: 43617490, participacion: 100, fechaInicio: "28/09/2009", fechaFin: "28/10/2009", duracion: "1 mes", smmlv: 87.78,
+    participacion: 100, fechaInicio: "28/09/2009", fechaFin: "28/10/2009", duracion: "1 mes", smmlv: 87.78,
     imagen: "https://images.unsplash.com/photo-1564894809611-1742fc40ed80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJpam9sfGVufDB8fDB8fHww",
   },
   {
@@ -745,7 +745,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Suministros de Ganado Bovino, aves de corral y equipos e insumos pecuarios para el desarrollo de proyectos productivos en atención de la población víctima del conflicto armado en el Municipio de Gachalá, Cundinamarca.",
     tag: "Ganadería", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachalá", municipio: "Gachalá, Cundinamarca",
-    valor: 53255000, participacion: 100, fechaInicio: "22/01/2015", fechaFin: "21/03/2015", duracion: "2 meses", smmlv: 82.65,
+    participacion: 100, fechaInicio: "22/01/2015", fechaFin: "21/03/2015", duracion: "2 meses", smmlv: 82.65,
     imagen: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&q=80",
   },
   {
@@ -756,7 +756,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Dirección y Coordinación Administrativa y Financiera de la interventoría al convenio interadministrativo y de cooperación técnico científica, suscrito entre el DAMA - CORPOICA y el FONDO DE DESARROLLO LOCAL CIUDAD BOLIVAR, mediante el cual ejecuta el proyecto 5132: asistencia técnica pecuaria, rural y ambiental de la localidad de Ciudad Bolívar.",
     tag: "Asistencia Técnica", color: "#b45309", categoria: "agropecuario",
     entidad: "2C Ingenieros S.A. / DAMA-CORPOICA", municipio: "Ciudad Bolívar, Bogotá",
-    valor: 55000000, participacion: 100, fechaInicio: "28/08/2007", fechaFin: "28/10/2008", duracion: "14 meses", smmlv: 119.18,
+    participacion: 100, fechaInicio: "28/08/2007", fechaFin: "28/10/2008", duracion: "14 meses", smmlv: 119.18,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgjUvoJwSOvqLwWgvKlCZwhSqT7mFSFzMcw&s",
   },
   {
@@ -767,7 +767,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Establecimiento Forestal como medida para la compensación de las emisiones de dióxido de carbono realizadas por el municipio de Gachetá en el año 2013.",
     tag: "Compensación CO₂", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachetá", municipio: "Gachetá, Cundinamarca",
-    valor: 4800000, participacion: 100, fechaInicio: "16/10/2014", fechaFin: "31/12/2014", duracion: "2 meses 15 días", smmlv: 7.79,
+    participacion: 100, fechaInicio: "16/10/2014", fechaFin: "31/12/2014", duracion: "2 meses 15 días", smmlv: 7.79,
     imagen: "data:image/jpeg;base64,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",
   },
   {
@@ -778,7 +778,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Suministro de Insumos (Semillas) para ser entregados dentro del ciclo de capacitaciones en Desarrollo del plan de Seguridad Alimentaria 2013 en el Municipio de Gachetá.",
     tag: "Seguridad Alimentaria", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachetá", municipio: "Gachetá, Cundinamarca",
-    valor: 3529000, participacion: 100, fechaInicio: "15/11/2013", fechaFin: "16/12/2013", duracion: "1 mes", smmlv: 5.99,
+    participacion: 100, fechaInicio: "15/11/2013", fechaFin: "16/12/2013", duracion: "1 mes", smmlv: 5.99,
     imagen: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=600&q=80",
   },
   {
@@ -789,7 +789,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Compraventa para el desarrollo del proyecto productivo de gallinas ponedoras para la producción de huevo como plan de seguridad alimentaria de las familias desplazadas residentes en el municipio de Gachetá, Cundinamarca.",
     tag: "Producción Huevo", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachetá", municipio: "Gachetá, Cundinamarca",
-    valor: 10972656, participacion: 100, fechaInicio: "22/12/2013", fechaFin: "25/02/2014", duracion: "2 meses", smmlv: 17.81,
+    participacion: 100, fechaInicio: "22/12/2013", fechaFin: "25/02/2014", duracion: "2 meses", smmlv: 17.81,
     imagen: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FsbGluYXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
@@ -800,7 +800,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Compraventa de alimentos concentrados balanceados y suplementarios alimenticios para los animales de la granja integral del Municipio de Gachetá.",
     tag: "Alimentación Animal", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachetá", municipio: "Gachetá, Cundinamarca",
-    valor: 6045880, participacion: 100, fechaInicio: "20/11/2013", fechaFin: "29/12/2013", duracion: "1 mes", smmlv: 10.26,
+    participacion: 100, fechaInicio: "20/11/2013", fechaFin: "29/12/2013", duracion: "1 mes", smmlv: 10.26,
     imagen: "https://plus.unsplash.com/premium_photo-1677575242377-5e04cd0b5614?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FuYWRvfGVufDB8fDB8fHww",
   },
   {
@@ -811,7 +811,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Servicio de obras civiles para el abandono del pozo Puinaves - 2, ubicado en la jurisdicción del municipio de Paz de Ariporo, Casanare.",
     tag: "Abandono Pozo", color: "#b45309", categoria: "agropecuario",
     entidad: "Petrolifera Petroleum Colombia", municipio: "Paz de Ariporo, Casanare",
-    valor: 28081250, participacion: 100, fechaInicio: "31/03/2011", fechaFin: "09/04/2011", duracion: "9 días", smmlv: 52.43,
+    participacion: 100, fechaInicio: "31/03/2011", fechaFin: "09/04/2011", duracion: "9 días", smmlv: 52.43,
     imagen: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80",
   },
   {
@@ -822,7 +822,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Servicios para el mantenimiento zonas de cesión al distrito Villa Alsacia etapas 3 y 4.",
     tag: "Mantenimiento", color: "#b45309", categoria: "agropecuario",
     entidad: "Bienes y Comercio S.A.",
-    valor: 99079915, participacion: 100, fechaInicio: "26/10/2012", fechaFin: "11/01/2013", duracion: "3 meses", smmlv: 174.84,
+    participacion: 100, fechaInicio: "26/10/2012", fechaFin: "11/01/2013", duracion: "3 meses", smmlv: 174.84,
     imagen: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80",
   },
   {
@@ -833,7 +833,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Consultoría para la valoración económica de intervención forestal.",
     tag: "Valoración Forestal", color: "#b45309", categoria: "agropecuario",
     entidad: "Empresa de Energía del Quindío",
-    valor: 6612000, participacion: 100, fechaInicio: "05/10/2012", fechaFin: "20/10/2012", duracion: "15 días", smmlv: 11.67,
+    participacion: 100, fechaInicio: "05/10/2012", fechaFin: "20/10/2012", duracion: "15 días", smmlv: 11.67,
     imagen: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
   },
   {
@@ -844,7 +844,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Adquisición de equipos de laboratorios - Solución integral cámara climática con destino a los Laboratorios, talleres, centros y aulas especializadas de la Facultad del Medio ambiente y Recursos Naturales de la Universidad Distrital Francisco José de Caldas.",
     tag: "Equipos Lab.", color: "#b45309", categoria: "agropecuario",
     entidad: "Universidad Distrital Francisco José de Caldas",
-    valor: 45240000, participacion: 100, fechaInicio: "14/09/2009", fechaFin: "14/09/2010", duracion: "1 año", smmlv: 87.84,
+    participacion: 100, fechaInicio: "14/09/2009", fechaFin: "14/09/2010", duracion: "1 año", smmlv: 87.84,
     imagen: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=80",
   },
   {
@@ -855,8 +855,8 @@ export const contratos: Contrato[] = [
     fullDescription: "Evaluación y caracterización de flujos de agua.",
     tag: "Calidad Agua", color: "#b45309", categoria: "agropecuario",
     entidad: "Universidad Militar Nueva Granada",
-    valor: 4950000, participacion: 100, fechaInicio: "07/09/2011", fechaFin: "27/09/2011", duracion: "20 días", smmlv: 9.24,
-    imagen: "https://images.unsplash.com/photo-1455218873509-8097305ee378?w=600&q=80",
+    participacion: 100, fechaInicio: "07/09/2011", fechaFin: "27/09/2011", duracion: "20 días", smmlv: 9.24,
+    imagen: "https://images.unsplash.com/photo-1699892729131-726cf3aae781?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZsdWpvJTIwZGUlMjBhZ3VhfGVufDB8fDB8fHww",
   },
   {
     id: 78, rupNo: "20",
@@ -866,7 +866,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Prestación de servicios profesionales para la asesoría, acompañamiento y apoyo en el cumplimiento de la normatividad ambiental en el municipio de Gachetá en Cundinamarca.",
     tag: "Normatividad", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachetá", municipio: "Gachetá, Cundinamarca",
-    valor: 16200000, participacion: 100, fechaInicio: "02/08/2013", fechaFin: "31/12/2013", duracion: "5 meses", smmlv: 27.48,
+    participacion: 100, fechaInicio: "02/08/2013", fechaFin: "31/12/2013", duracion: "5 meses", smmlv: 27.48,
     imagen: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80",
   },
   {
@@ -877,7 +877,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Actualización del plan de Gestión Integral de Residuos Sólidos para el Municipio de Gacheta.",
     tag: "PGIRS", color: "#b45309", categoria: "agropecuario",
     entidad: "Alcaldía Municipal de Gachetá", municipio: "Gachetá, Cundinamarca",
-    valor: 7946000, participacion: 100, fechaInicio: "03/10/2012", fechaFin: "22/12/2012", duracion: "2 meses 19 días", smmlv: 14.02,
+    participacion: 100, fechaInicio: "03/10/2012", fechaFin: "22/12/2012", duracion: "2 meses 19 días", smmlv: 14.02,
     imagen: "https://images.unsplash.com/photo-1492496913980-501348b61469?w=600&q=80",
   },
   {
@@ -888,7 +888,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Realizar y prestar el servicio de desarrollo e implementación de la compensación por cambio de uso de suelo, para el campo Opón, ubicado en el municipio de Cimitarra departamento del Santander.",
     tag: "Compensación", color: "#b45309", categoria: "agropecuario",
     entidad: "Petrocolombia COP", municipio: "Cimitarra, Santander",
-    valor: 144319000, participacion: 100, fechaInicio: "01/08/2015", fechaFin: "30/07/2018", duracion: "3 años", smmlv: 223.98,
+    participacion: 100, fechaInicio: "01/08/2015", fechaFin: "30/07/2018", duracion: "3 años", smmlv: 223.98,
     imagen: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&q=80",
   },
   {
@@ -900,8 +900,8 @@ export const contratos: Contrato[] = [
     tag: "Humedales", color: "#b45309", categoria: "agropecuario",
     entidad: "Gobernación de Casanare", consorcio: "Consorcio Ecocasanare 2014",
     municipio: "Casanare",
-    valor: 178396400, participacion: 50, fechaInicio: "12/05/2014", fechaFin: "12/05/2015", duracion: "12 meses", smmlv: 138.32,
-    imagen: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=600&q=80",
+    participacion: 50, fechaInicio: "12/05/2014", fechaFin: "12/05/2015", duracion: "12 meses", smmlv: 138.32,
+    imagen: "https://plus.unsplash.com/premium_photo-1664301324141-c7f0229ca1bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZXN0dWRpb3MlMjBkZSUyMHN1ZWxvc3xlbnwwfHwwfHx8MA%3D%3D",
   },
 
   // ═══════════════════════════════════════════
@@ -915,8 +915,8 @@ export const contratos: Contrato[] = [
     fullDescription: "Elaboración de estudios técnicos, levantamientos topográficos, avalúos Comerciales, Gastos de Documentación, Escrituración y vallas.",
     tag: "Estudios Técnicos", color: "#6d28d9", categoria: "territorial",
     entidad: "Alcaldía Municipal de Gachetá", municipio: "Gachetá, Cundinamarca",
-    valor: 53928000, participacion: 100, fechaInicio: "27/09/2007", fechaFin: "15/12/2007", duracion: "2 meses 17 días", smmlv: 124.34,
-    imagen: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80",
+    participacion: 100, fechaInicio: "27/09/2007", fechaFin: "15/12/2007", duracion: "2 meses 17 días", smmlv: 124.34,
+    imagen: "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0dXJhbGV6YXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 83, rupNo: "31",
@@ -927,8 +927,8 @@ export const contratos: Contrato[] = [
     tag: "Gestión Territorial", color: "#6d28d9", categoria: "territorial",
     entidad: "Alcaldía Local de Suba", municipio: "Suba, Bogotá",
     consorcio: "Consorcio 2C - ECOAFA 2010",
-    valor: 219022318, participacion: 50, fechaInicio: "15/02/2011", fechaFin: "30/10/2011", duracion: "8 meses 16 días", smmlv: 408.93,
-    imagen: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80",
+    participacion: 50, fechaInicio: "15/02/2011", fechaFin: "30/10/2011", duracion: "8 meses 16 días", smmlv: 408.93,
+    imagen: "https://plus.unsplash.com/premium_photo-1723568634218-8b913db985e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29jaWVkYWQlMjBjaXZpbHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 84, rupNo: "12",
@@ -938,8 +938,8 @@ export const contratos: Contrato[] = [
     fullDescription: "Servicios de consultoría para formular y ejecutar un plan estratégico para fortalecer la red de comercialización regional del Reciclaje de residuos inorgánicos, en 22 municipios del Suroeste antioqueño, jurisdicción de CORANTIOQUIA, analizando los ejes temáticos: técnico-operativo, financiero-comercial, socio-cultural y de seguimiento-evaluación.",
     tag: "Reciclaje", color: "#6d28d9", categoria: "territorial",
     entidad: "CORANTIOQUIA", municipio: "22 municipios Suroeste Antioqueño",
-    valor: 220945200, participacion: 100, fechaInicio: "01/02/2010", fechaFin: "12/12/2010", duracion: "11 meses", smmlv: 429.02,
-    imagen: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80",
+    participacion: 100, fechaInicio: "01/02/2010", fechaFin: "12/12/2010", duracion: "11 meses", smmlv: 429.02,
+    imagen: "https://plus.unsplash.com/premium_photo-1683063005230-ec93739b6dd8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVjaWNsYWplfGVufDB8fDB8fHww",
   },
   {
     id: 85, rupNo: "44",
@@ -949,8 +949,8 @@ export const contratos: Contrato[] = [
     fullDescription: "Realizar el inventario de puntos de agua (pozos, aljibes, manantiales) y cuantificación de la demanda hidráulica subterránea en la zona plana de los valles de Ubaté y Chiquinquirá.",
     tag: "Aguas Subterráneas", color: "#6d28d9", categoria: "territorial",
     entidad: "2C Ingenieros S.A.", municipio: "Ubaté y Chiquinquirá",
-    valor: 30000000, participacion: 100, fechaInicio: "29/01/2008", fechaFin: "26/09/2008", duracion: "7 meses 15 días", smmlv: 65.01,
-    imagen: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80",
+    participacion: 100, fechaInicio: "29/01/2008", fechaFin: "26/09/2008", duracion: "7 meses 15 días", smmlv: 65.01,
+    imagen: "https://images.unsplash.com/photo-1696371269814-ae41fc67cf03?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWd1YXMlMjBzdWJ0ZXJyYW5lYXN8ZW58MHx8MHx8fDA%3D",
   },
   {
     id: 86, rupNo: "59",
@@ -960,8 +960,8 @@ export const contratos: Contrato[] = [
     fullDescription: "Consultoría para la elaboración de estudios, diseños de los documentos del Plan de Saneamiento y Manejo de Vertimientos-PSMV de las Inspecciones de Rionegro, Montecristo y los Alpes del Municipio de Gachalá, Cundinamarca.",
     tag: "PSMV", color: "#6d28d9", categoria: "territorial",
     entidad: "Alcaldía Municipal de Gachalá", municipio: "Gachalá, Cundinamarca",
-    valor: 49402080, participacion: 100, fechaInicio: "07/01/2015", fechaFin: "06/04/2015", duracion: "3 meses 19 días", smmlv: 76.67,
-    imagen: "https://images.unsplash.com/photo-1519011985664-040dd7d27db7?w=600&q=80",
+    participacion: 100, fechaInicio: "07/01/2015", fechaFin: "06/04/2015", duracion: "3 meses 19 días", smmlv: 76.67,
+    imagen: "https://plus.unsplash.com/premium_photo-1681987448179-4a93b7975018?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVjaWNsYWplfGVufDB8fDB8fHww",
   },
   {
     id: 87, rupNo: "70",
@@ -972,8 +972,8 @@ export const contratos: Contrato[] = [
     tag: "Turismo Sostenible", color: "#6d28d9", categoria: "territorial",
     entidad: "CORPOGUAVIO", municipio: "Provincia del Guavio",
     consorcio: "Consorcio Ruta del Agua 2015",
-    valor: 849120000, participacion: 55, fechaInicio: "20/08/2015", fechaFin: "13/07/2016", duracion: "12 meses", smmlv: 1231.58,
-    imagen: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&q=80",
+    participacion: 55, fechaInicio: "20/08/2015", fechaFin: "13/07/2016", duracion: "12 meses", smmlv: 1231.58,
+    imagen: "https://images.unsplash.com/photo-1619429117662-a7ceea61cd6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJpb3N8ZW58MHx8MHx8fDA%3D",
   },
   {
     id: 88, rupNo: "9",
@@ -983,8 +983,8 @@ export const contratos: Contrato[] = [
     fullDescription: "Interventoría Técnica para el contrato de implantación de Reforestación protectora a nacimientos de Agua que abastecen la cabecera municipal y áreas ribereñas del Municipio de Gachetá, Departamento de Cundinamarca.",
     tag: "Interventoría", color: "#6d28d9", categoria: "territorial",
     entidad: "Alcaldía Municipal de Gachetá", municipio: "Gachetá, Cundinamarca",
-    valor: 24457397, participacion: 100, fechaInicio: "11/02/2008", fechaFin: "10/02/2009", duracion: "12 meses", smmlv: 49.22,
-    imagen: "https://images.unsplash.com/photo-1510218830377-2e994ea9bc6e?w=600&q=80",
+    participacion: 100, fechaInicio: "11/02/2008", fechaFin: "10/02/2009", duracion: "12 meses", smmlv: 49.22,
+    imagen: "data:image/jpeg;base64,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",
   },
   {
     id: 89, rupNo: "94",
@@ -994,7 +994,7 @@ export const contratos: Contrato[] = [
     fullDescription: "Actualizar la estrategia de respuesta municipal de acuerdo con la Ley 1523 de 2012 en el municipio de La Vega - Cundinamarca.",
     tag: "Gestión del Riesgo", color: "#6d28d9", categoria: "territorial",
     entidad: "Alcaldía Municipal de La Vega", municipio: "La Vega, Cundinamarca",
-    valor: 40251750, participacion: 100, fechaInicio: "10/01/2018", fechaFin: "09/06/2018", duracion: "5 meses", smmlv: 142.68,
+    participacion: 100, fechaInicio: "10/01/2018", fechaFin: "09/06/2018", duracion: "5 meses", smmlv: 142.68,
     imagen: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80",
   },
 ];

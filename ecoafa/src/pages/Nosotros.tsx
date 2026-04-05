@@ -7,6 +7,7 @@
 import { MapPin, Phone, Mail, Target, Eye, Leaf, Users, Award, Globe } from 'lucide-react'
 import OfficeMap from '../components/maps/OfficeMap'
 import ContactForm from '../components/contact/ContactForm'
+import equipoEcoafa from '../assets/images/galeria/equipoEcoafa.jpeg'
 import {
   OFFICE_PHONE,
   OFFICE_EMAIL,
@@ -124,7 +125,7 @@ export default function Nosotros() {
             {/* Foto */}
             <div className="relative overflow-hidden rounded-3xl shadow-2xl" style={{ height: '480px' }}>
               <img
-                src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?w=900&q=85"
+                src={equipoEcoafa}
                 alt="ECOAFA — Consultoría ambiental y forestal"
                 className="kb-who absolute inset-0 w-full h-full object-cover"
               />

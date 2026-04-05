@@ -1,36 +1,83 @@
 // src/pages/servicios/Territorial.tsx
+import React from "react";
+import { MapPin, BookOpen, Globe2, Factory, Map, Building2, Trees } from "lucide-react";
 
-interface ServiceItem {
-  icon: string;
-  text: string;
-}
+interface ServiceItem { icon: React.ReactNode; text: string; }
 
 const services: ServiceItem[] = [
-  { icon: "📍", text: "Elaboración y actualización de los Planes de Ordenamiento Territorial" },
-  { icon: "📖", text: "Planes de Manejo Ambiental – Ordenamiento de cuencas, Áreas protegidas, Áreas de reserva forestal, Distrito de Manejo Integrado, Áreas de conservación de suelos" },
-  { icon: "🌐", text: "Estudios de Impacto Ambiental con el fin de obtener licencias ambientales y sus respectivos planes de manejo" },
-  { icon: "🏭", text: "Asesoría en la formulación de Planes de Gestión Ambiental para empresas del sector industrial, manufacturero, agroindustrial, servicios y comercial" },
-  { icon: "🗺️", text: "Actualización cartográfica para proyectos específicos, implementación de herramientas como el Sistema de Información Geográfica (SIG)" },
-  { icon: "🏙️", text: "Asesoría y acompañamiento en los componentes ambientales de los Proyectos de Desarrollo Urbano" },
-  { icon: "🌿", text: "Programas de Educación Ambiental en proyectos urbanos" },
+  { icon: <MapPin className="w-7 h-7" />, text: "Elaboración y actualización de los Planes de Ordenamiento Territorial" },
+  { icon: <BookOpen className="w-7 h-7" />, text: "Planes de Manejo Ambiental – Ordenamiento de cuencas, Áreas protegidas, Áreas de reserva forestal, Distrito de Manejo Integrado, Áreas de conservación de suelos" },
+  { icon: <Globe2 className="w-7 h-7" />, text: "Estudios de Impacto Ambiental con el fin de obtener licencias ambientales y sus respectivos planes de manejo" },
+  { icon: <Factory className="w-7 h-7" />, text: "Asesoría en la formulación de Planes de Gestión Ambiental para empresas del sector industrial, manufacturero, agroindustrial, servicios y comercial" },
+  { icon: <Map className="w-7 h-7" />, text: "Actualización cartográfica para proyectos específicos, implementación de herramientas como el Sistema de Información Geográfica (SIG)" },
+  { icon: <Building2 className="w-7 h-7" />, text: "Asesoría y acompañamiento en los componentes ambientales de los Proyectos de Desarrollo Urbano" },
+  { icon: <Trees className="w-7 h-7" />, text: "Programas de Educación Ambiental en proyectos urbanos" },
 ];
 
 function ServiceCard({ item, accent }: { item: ServiceItem; accent: string }) {
   return (
     <div
-      className="flex flex-col gap-4 rounded-2xl p-6 border bg-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg group cursor-default"
-      style={{ borderColor: "#e0edf7", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}
+      className="relative flex flex-col gap-5 rounded-2xl p-7 bg-white/70 backdrop-blur-sm border border-gray-100 transition-all duration-300 hover:-translate-y-2 group cursor-default overflow-hidden"
+      style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.03)" }}
     >
+      <div 
+        className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none"
+        style={{ background: `linear-gradient(135deg, transparent, ${accent})` }}
+      />
       <div
-        className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl flex-shrink-0 transition-transform duration-300 group-hover:scale-110"
-        style={{ backgroundColor: `${accent}15`, border: `1.5px solid ${accent}35` }}
+        className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-sm relative z-10"
+        style={{ 
+          backgroundColor: `${accent}15`, 
+          color: accent,
+          border: `1px solid ${accent}30`
+        }}
       >
         {item.icon}
       </div>
-      <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-800 transition-colors duration-200">
+      <p className="text-gray-600 text-sm md:text-base font-medium leading-relaxed group-hover:text-gray-900 transition-colors duration-200 relative z-10">
         {item.text}
       </p>
+      <div 
+        className="absolute bottom-0 left-0 h-1 w-0 group-hover:w-full transition-all duration-500 ease-out"
+        style={{ backgroundColor: accent }}
+      />
     </div>
+  );
+}
+
+function CardsSection({
+  items,
+  label,
+  accent = "#7DC242",
+  bg = "#f4f7f0",
+}: {
+  items: ServiceItem[];
+  label: string;
+  accent?: string;
+  bg?: string;
+}) {
+  return (
+    <section className="py-24 px-6 relative" style={{ backgroundColor: bg }}>
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <span
+            className="inline-block text-sm font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-4"
+            style={{ 
+              color: accent, 
+              backgroundColor: `${accent}15`,
+              border: `1px solid ${accent}30` 
+            }}
+          >
+            {label}
+          </span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {items.map((item, i) => (
+            <ServiceCard key={i} item={item} accent={accent} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -106,23 +153,8 @@ export default function Territorial() {
       </section>
 
       {/* ── CARDS ── */}
-      <section className="py-20 px-6" style={{ backgroundColor: "#f0f8ff" }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <span
-              className="text-xs font-bold tracking-[0.3em] uppercase pb-2 border-b-2"
-              style={{ color: "#00AEEF", borderColor: "#00AEEF" }}
-            >
-              Servicios
-            </span>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {services.map((item, i) => (
-              <ServiceCard key={i} item={item} accent="#00AEEF" />
-            ))}
-          </div>
-        </div>
-      </section>
+      <CardsSection items={services} label="Servicios" accent="#00AEEF" bg="#f0f8ff" />
+      
     </>
   );
 }

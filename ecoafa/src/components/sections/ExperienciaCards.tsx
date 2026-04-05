@@ -82,51 +82,65 @@ export default function ExperienciaCards() {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {contracts.map((contract) => (
             <div
               key={contract.id}
-              className="rounded-2xl p-8 border transition-all duration-300 hover:scale-[1.02] hover:shadow-xl group"
+              className="relative rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] group flex flex-col bg-white overflow-hidden"
               style={{
-                backgroundColor: "#fff",
-                borderColor: "rgba(125,194,66,0.18)",
-                boxShadow: "0 2px 16px rgba(0,0,0,0.06)",
+                borderColor: "rgba(0,0,0,0.05)",
               }}
             >
-              {/* Year badge */}
-              <div className="flex items-center justify-between mb-6">
+              {/* Subtle top border accent */}
+              <div 
+                className="absolute top-0 left-0 w-full h-1 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+                style={{ backgroundColor: contract.color }}
+              />
+
+              {/* Header: Tag & Year */}
+              <div className="flex items-center justify-between mb-8 relative z-10">
                 <span
-                  className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full"
+                  className="text-[0.65rem] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full backdrop-blur-sm"
                   style={{
-                    backgroundColor: `${contract.color}20`,
+                    backgroundColor: `${contract.color}15`,
                     color: contract.color,
-                    border: `1px solid ${contract.color}40`,
+                    border: `1px solid ${contract.color}30`,
                   }}
                 >
                   {contract.tag}
                 </span>
                 <span
-                  className="text-3xl font-black"
-                  style={{ color: `${contract.color}40` }}
+                  className="text-4xl font-black opacity-20 group-hover:opacity-40 transition-opacity duration-300 transform group-hover:scale-110"
+                  style={{ color: contract.color }}
                 >
                   {contract.year}
                 </span>
               </div>
 
-              {/* Icon */}
-              <div
-                className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
-                style={{ backgroundColor: `${contract.color}15` }}
-              >
-                <FileText size={22} style={{ color: contract.color }} />
+              {/* Icon & Title */}
+              <div className="mb-4 relative z-10">
+                <div
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300"
+                  style={{ backgroundColor: contract.color, boxShadow: `0 8px 24px -6px ${contract.color}80` }}
+                >
+                  <FileText size={24} className="text-white" />
+                </div>
+
+                <h3 className="text-lg font-bold text-gray-800 leading-snug group-hover:text-gray-900">
+                  {contract.title}
+                </h3>
               </div>
 
-              <h3 className="text-base font-bold text-gray-800 mb-3 leading-snug">
-                {contract.title}
-              </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              {/* Description */}
+              <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow relative z-10">
                 {contract.description}
               </p>
+              
+              {/* Hidden decorative bg element */}
+              <div 
+                className="absolute -bottom-16 -right-16 w-48 h-48 rounded-full blur-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none"
+                style={{ backgroundColor: contract.color }}
+              />
             </div>
           ))}
         </div>
