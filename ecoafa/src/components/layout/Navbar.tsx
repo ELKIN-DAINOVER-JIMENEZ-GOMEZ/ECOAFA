@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { Menu, X, ChevronDown, Leaf } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { NAV_LINKS, SERVICIOS_LINKS } from '../../lib/Constants'
 import { useScrollToSection } from '../../hooks/useScrollToSection'
 import logo from '../../assets/logo.svg'
@@ -22,13 +22,14 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
+      if (menuOpen) return
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setDropdownOpen(false)
       }
     }
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [])
+  }, [menuOpen])
 
   useEffect(() => {
     setMenuOpen(false)
@@ -55,12 +56,18 @@ export default function Navbar() {
     setMenuOpen(false)
   }
 
+  const handleServiceClick = (href: string) => {
+    navigate(href)
+    setMenuOpen(false)
+    setDropdownOpen(false)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   // Clases dinámicas según estado de scroll
   const isLight = scrolled || menuOpen
   const linkClass = isLight
     ? 'text-[#5A9A2E] hover:text-[#3d6e1e]'
     : 'text-white/80 hover:text-[#7DC242]'
-  const subTextClass = isLight ? 'text-[#5A9A2E]/60' : 'text-white/60'
   const hamburgerClass = isLight ? 'text-[#5A9A2E]' : 'text-white/80 hover:text-[#7DC242]'
 
   return (
@@ -118,7 +125,7 @@ export default function Navbar() {
                     <Link
                       key={s.href}
                       to={s.href}
-                      onClick={() => setDropdownOpen(false)}
+                      onClick={() => handleServiceClick(s.href)}
                       className={`flex items-center gap-3 px-5 py-3.5 text-sm transition-all duration-200 group ${
                         i !== SERVICIOS_LINKS.length - 1
                           ? isLight ? 'border-b border-gray-50' : 'border-b border-white/5'
@@ -183,6 +190,7 @@ export default function Navbar() {
                     <Link
                       key={s.href}
                       to={s.href}
+                      onClick={() => handleServiceClick(s.href)}
                       className={`flex items-center gap-2 py-2 text-sm transition-colors ${
                         isLight ? 'text-[#5A9A2E]/70 hover:text-[#3d6e1e]' : 'text-white/60 hover:text-[#7DC242]'
                       }`}
@@ -205,14 +213,6 @@ export default function Navbar() {
               </button>
             ))}
 
-            <div className="pt-3 px-4">
-              <a
-                href="tel:3108795727"
-                className="block text-center px-5 py-3 bg-[#7DC242] hover:bg-[#5A9A2E] text-white font-bold text-xs uppercase tracking-widest rounded-full transition-colors"
-              >
-                Llamar: 310 879 5727
-              </a>
-            </div>
           </div>
         </div>
       </nav>

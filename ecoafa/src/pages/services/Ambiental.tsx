@@ -14,10 +14,26 @@ const services1: ServiceItem[] = [
   { icon: <Factory className="w-7 h-7" />, text: "Asesoría en la estructuración de Planes Saneamiento y Manejo de Vertimientos" },
 ];
 
-const services2: ServiceItem[] = [
+const services: ServiceItem[] = [
+  ...services1,
   { icon: <Settings className="w-7 h-7" />, text: "Asesoría para Optimizar los Procesos de las Plantas de Tratamiento de agua residual y agua potable" },
   { icon: <TestTube className="w-7 h-7" />, text: "Monitoreos de Calidad de Agua (Residual – Potable)" },
   { icon: <Megaphone className="w-7 h-7" />, text: "Capacitación y Divulgación Ambiental" },
+];
+
+const complementaryServices: ServiceItem[] = [
+  {
+    icon: <Settings className="w-7 h-7" />,
+    text: "Estudios y diseños de planes maestros, AVR, hidrogeológicos.",
+  },
+  {
+    icon: <TestTube className="w-7 h-7" />,
+    text: "Programas de monitoreo de oso",
+  },
+  {
+    icon: <Megaphone className="w-7 h-7" />,
+    text: "Acciones de investigación participativa para fauna amenazada",
+  },
 ];
 
 function ServiceCard({ item, accent }: { item: ServiceItem; accent: string }) {
@@ -31,7 +47,7 @@ function ServiceCard({ item, accent }: { item: ServiceItem; accent: string }) {
         style={{ background: `linear-gradient(135deg, transparent, ${accent})` }}
       />
       <div
-        className="w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-sm relative z-10"
+        className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-sm relative z-10"
         style={{ 
           backgroundColor: `${accent}15`, 
           color: accent,
@@ -120,7 +136,7 @@ export default function Ambiental() {
             zIndex: 0,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/65 z-10" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/25 to-black/65 z-10" />
 
         <div className="relative z-20 max-w-4xl px-6">
           <p className="hf-0 text-xs font-bold tracking-[0.35em] uppercase mb-4" style={{ color: "#00AEEF" }}>
@@ -139,7 +155,7 @@ export default function Ambiental() {
         </div>
 
         <div
-          className="absolute bottom-0 left-0 right-0 h-[3px] z-20"
+          className="absolute bottom-0 left-0 right-0 h-0.75 z-20"
           style={{ background: "linear-gradient(to right, #7DC242, #00AEEF)" }}
         />
       </section>
@@ -160,15 +176,15 @@ export default function Ambiental() {
 
       {/* ── CARDS 1 ── */}
       <CardsSection
-        items={services1}
-        label="Servicios Principales"
+        items={services}
+        label="Servicios Ambientales"
         accent="#7DC242"
         bg="#f4f7f0"
       />
 
       {/* ── CARDS 2 ── */}
       <CardsSection
-        items={services2}
+        items={complementaryServices}
         label="Servicios Complementarios"
         accent="#00AEEF"
         bg="#f0f8ff"

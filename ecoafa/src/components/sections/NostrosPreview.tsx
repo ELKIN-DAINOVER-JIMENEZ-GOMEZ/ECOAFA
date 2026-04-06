@@ -5,7 +5,7 @@ import imgNosotros from "../../assets/images/nosotros/imgNosotros.jpeg";
 
 const stats = [
   { icon: Calendar, value: "+17", label: "Años de experiencia" },
-  { icon: Leaf, value: "+50", label: "Proyectos ejecutados" },
+  { icon: Leaf, value: "+115", label: "Proyectos ejecutados" },
   { icon: Users, value: "+30", label: "Clientes atendidos" },
   { icon: MapPin, value: "4", label: "Áreas de servicio" },
 ];
@@ -105,7 +105,7 @@ export default function NosotrosPreview() {
               ambiental, sanitario y agropecuario tanto en la zona rural como
               urbana.
             </p>
-            <p className="text-gray-500 text-base leading-relaxed mb-8">
+            <p className="text-gray-700 text-lg leading-relaxed mb-5">
               Contamos con recursos tecnológicos para la ejecución de sus
               proyectos, lo que permite desarrollar sus ideas eficazmente,
               posicionando su estructura comercial en el mercado.

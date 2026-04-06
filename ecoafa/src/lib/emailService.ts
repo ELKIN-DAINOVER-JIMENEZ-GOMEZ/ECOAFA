@@ -1,3 +1,5 @@
+import { OFFICE_EMAIL } from './Constants'
+
 export interface ContactFormData {
   nombre: string
   email: string
@@ -7,20 +9,16 @@ export interface ContactFormData {
 }
 
 export async function sendEmail(data: ContactFormData): Promise<void> {
-  const res = await fetch('https://formspree.io/f/mqeyakgo', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      nombre:   data.nombre,
-      email:    data.email,
-      telefono: data.telefono ?? 'No proporcionado',
-      asunto:   data.asunto,
-      mensaje:  data.mensaje,
-    }),
-  })
+  const subject = encodeURIComponent(`Consulta ECOAFA: ${data.asunto}`)
+  const body = encodeURIComponent(
+    [
+      `Nombre: ${data.nombre}`,
+      `Correo: ${data.email}`,
+      `Teléfono: ${data.telefono ?? 'No proporcionado'}`,
+      '',
+      data.mensaje,
+    ].join('\n')
+  )
 
-  if (!res.ok) {
-    const msg = await res.text()
-    throw new Error(`Formspree error ${res.status}: ${msg}`)
-  }
+  window.location.href = `mailto:${OFFICE_EMAIL}?subject=${subject}&body=${body}`
 }

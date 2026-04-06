@@ -1,8 +1,8 @@
-export const WHATSAPP_NUMBER = '573108795727'
-export const OFFICE_EMAIL = 'ecoafa.sas@gmail.com'
-export const OFFICE_PHONE = '310 879 5727'
-export const OFFICE_ADDRESS = 'CRA 12 #93 - 78, Bogotá D.C.'
-export const OFFICE_COORDS = { lat: 4.6830, lng: -74.0558 }
+export const WHATSAPP_NUMBER = '573188069001'
+export const OFFICE_EMAIL = 'gerencia@ecoafa.com'
+export const OFFICE_PHONE = '318 8069001'
+export const OFFICE_ADDRESS = 'Cra 65 67a 59 oficina 303'
+export const OFFICE_COORDS = { lat: 4.6719491, lng: -74.0859643 }
 
 export const NAV_LINKS = [
   { label: 'Nosotros', href: '/nosotros', sectionId: 'nosotros' },

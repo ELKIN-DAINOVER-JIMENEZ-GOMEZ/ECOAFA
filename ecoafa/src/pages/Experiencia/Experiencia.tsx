@@ -63,15 +63,12 @@ function ContratoModal({ contrato, onClose }: { contrato: Contrato; onClose: () 
               {cat.label}
             </span>
           </div>
-          <div className="absolute top-3 left-4">
-            <span className="text-4xl font-black text-white/30">{contrato.year}</span>
-          </div>
         </div>
 
         {/* Content */}
         <div className="p-6">
           <div className="flex items-start gap-3 mb-4">
-            <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: cat.gradient }}>
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ background: cat.gradient }}>
               <FileText size={20} className="text-white" />
             </div>
             <div>
@@ -88,7 +85,7 @@ function ContratoModal({ contrato, onClose }: { contrato: Contrato; onClose: () 
           <div className="grid grid-cols-2 gap-3 mb-4">
             {valorFmt && (
               <div className="col-span-2 flex items-center gap-3 p-3 rounded-xl" style={{ backgroundColor: `${cat.border}10`, border: `1px solid ${cat.border}25` }}>
-                <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: `${cat.border}20` }}>
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: `${cat.border}20` }}>
                   <DollarSign size={14} style={{ color: cat.border }} />
                 </div>
                 <div>
@@ -108,7 +105,7 @@ function ContratoModal({ contrato, onClose }: { contrato: Contrato; onClose: () 
 
             {contrato.fechaInicio && (
               <div className="flex items-center gap-2 p-3 rounded-xl bg-gray-50">
-                <Calendar size={14} className="text-gray-400 flex-shrink-0" />
+                <Calendar size={14} className="text-gray-400 shrink-0" />
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-wider">Inicio</p>
                   <p className="text-sm font-semibold text-gray-700">{contrato.fechaInicio}</p>
@@ -118,7 +115,7 @@ function ContratoModal({ contrato, onClose }: { contrato: Contrato; onClose: () 
 
             {contrato.fechaFin && (
               <div className="flex items-center gap-2 p-3 rounded-xl bg-gray-50">
-                <Calendar size={14} className="text-gray-400 flex-shrink-0" />
+                <Calendar size={14} className="text-gray-400 shrink-0" />
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-wider">Finalización</p>
                   <p className="text-sm font-semibold text-gray-700">{contrato.fechaFin}</p>
@@ -128,7 +125,7 @@ function ContratoModal({ contrato, onClose }: { contrato: Contrato; onClose: () 
 
             {contrato.duracion && (
               <div className="flex items-center gap-2 p-3 rounded-xl bg-gray-50">
-                <Clock size={14} className="text-gray-400 flex-shrink-0" />
+                <Clock size={14} className="text-gray-400 shrink-0" />
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-wider">Duración</p>
                   <p className="text-sm font-semibold text-gray-700">{contrato.duracion}</p>
@@ -138,7 +135,7 @@ function ContratoModal({ contrato, onClose }: { contrato: Contrato; onClose: () 
 
             {contrato.consorcio && (
               <div className="flex items-center gap-2 p-3 rounded-xl bg-gray-50">
-                <Users size={14} className="text-gray-400 flex-shrink-0" />
+                <Users size={14} className="text-gray-400 shrink-0" />
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-wider">Consorcio / UT</p>
                   <p className="text-sm font-semibold text-gray-700">{contrato.consorcio}</p>
@@ -150,7 +147,7 @@ function ContratoModal({ contrato, onClose }: { contrato: Contrato; onClose: () 
           <div className="space-y-3 pt-4 border-t border-gray-100">
             {contrato.entidad && (
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center shrink-0">
                   <Building2 size={14} className="text-gray-400" />
                 </div>
                 <div>
@@ -161,7 +158,7 @@ function ContratoModal({ contrato, onClose }: { contrato: Contrato; onClose: () 
             )}
             {contrato.municipio && (
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center shrink-0">
                   <MapPin size={14} className="text-gray-400" />
                 </div>
                 <div>
@@ -191,7 +188,7 @@ function ContratoCard({ contrato, onClick }: { contrato: Contrato; onClick: () =
       className="group flex flex-col text-left rounded-2xl overflow-hidden bg-white border border-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_40px_-15px_rgba(0,0,0,0.15)] cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 w-full h-full relative"
     >
       {/* Img Header */}
-      <div className="relative h-48 w-full overflow-hidden flex-shrink-0 bg-gray-50">
+      <div className="relative h-48 w-full overflow-hidden shrink-0 bg-gray-50">
         {!imgError ? (
           <img
             src={contrato.imagen}
@@ -207,8 +204,8 @@ function ContratoCard({ contrato, onClick }: { contrato: Contrato; onClick: () =
         )}
         
         {/* Gradients to ensure text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent opacity-70" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/40 via-transparent to-transparent opacity-70" />
 
         {/* Top Badges: Year & Value */}
         <div className="absolute top-3 left-3 right-3 flex justify-between items-start">
@@ -240,7 +237,7 @@ function ContratoCard({ contrato, onClick }: { contrato: Contrato; onClick: () =
       </div>
 
       {/* Body Content */}
-      <div className="p-5 flex flex-col flex-grow">
+      <div className="p-5 flex flex-col grow">
         <h3
           className="text-[0.95rem] font-bold text-gray-800 leading-snug mb-2 group-hover:text-gray-900 transition-colors"
           style={{ display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}
@@ -257,13 +254,13 @@ function ContratoCard({ contrato, onClick }: { contrato: Contrato; onClick: () =
           <div className="grid grid-cols-1 gap-2 pt-4 border-t border-gray-100">
              {contrato.entidad && (
               <div className="flex items-center gap-2 text-xs text-gray-500">
-                <Building2 size={13} className="text-gray-400 flex-shrink-0" />
+                <Building2 size={13} className="text-gray-400 shrink-0" />
                 <span className="truncate" title={contrato.entidad}>{contrato.entidad}</span>
               </div>
             )}
             {contrato.duracion && (
               <div className="flex items-center gap-2 text-xs text-gray-500">
-                <Clock size={13} className="text-gray-400 flex-shrink-0" />
+                <Clock size={13} className="text-gray-400 shrink-0" />
                 <span>{contrato.duracion}</span>
               </div>
             )}
@@ -343,14 +340,14 @@ export default function Experiencia() {
         </div>
       </section>
 
-      {/* ── Stats bar — sin total de valor ── */}
+      {/* ── Stats bar ── */}
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-6 py-6 flex flex-wrap gap-8 justify-center">
           {[
-            { label: "Contratos ejecutados", value: `${contratos.length}` },
-            { label: "Años de experiencia",  value: "17+" },
-            { label: "Departamentos",         value: "12+" },
-            { label: "Categorías",            value: "4" },
+            { label: "Contratos ejecutados", value: "+115" },
+            { label: "Años de experiencia", value: "17+" },
+            { label: "Departamentos", value: "12+" },
+            { label: "Categorías", value: "4" },
           ].map((s) => (
             <div key={s.label} className="text-center px-4">
               <p
@@ -402,16 +399,6 @@ export default function Experiencia() {
                   }
                 >
                   {f.label}
-                  <span
-                    className="rounded-full px-1.5 py-0.5 text-xs font-black"
-                    style={
-                      isActive
-                        ? { backgroundColor: "rgba(255,255,255,0.25)", color: "#fff" }
-                        : { backgroundColor: "#f3f4f6", color: "#6b7280" }
-                    }
-                  >
-                    {f.count}
-                  </span>
                 </button>
               );
             })}
