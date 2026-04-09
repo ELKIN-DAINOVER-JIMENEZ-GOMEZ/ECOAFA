@@ -13,6 +13,7 @@ export default function Navbar() {
   const navigate = useNavigate()
   const { scrollTo } = useScrollToSection()
   const isHome = location.pathname === '/'
+  const homeSectionIds = new Set(['clientes', 'galeria', 'footer'])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -36,17 +37,32 @@ export default function Navbar() {
     setDropdownOpen(false)
   }, [location.pathname])
 
+  const scrollToSectionWithRetry = (sectionId: string, attempts = 12) => {
+    let currentAttempt = 0
+
+    const tryScroll = () => {
+      const el = document.getElementById(sectionId)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        return
+      }
+
+      if (currentAttempt < attempts) {
+        currentAttempt += 1
+        window.setTimeout(tryScroll, 100)
+      }
+    }
+
+    tryScroll()
+  }
+
   const handleNavClick = (sectionId: string, href: string) => {
-    if (sectionId === 'footer') {
-      if (!isHome) {
-        navigate('/#footer-scroll')
-        setTimeout(() => {
-          const el = document.getElementById('footer')
-          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        }, 500)
+    if (homeSectionIds.has(sectionId)) {
+      if (isHome) {
+        scrollTo(sectionId)
       } else {
-        const el = document.getElementById('footer')
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        navigate('/')
+        scrollToSectionWithRetry(sectionId)
       }
     } else if (isHome) {
       scrollTo(sectionId)
