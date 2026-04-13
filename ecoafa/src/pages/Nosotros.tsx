@@ -21,7 +21,7 @@ const MAPS_EMBED =
 // ─── Datos ────────────────────────────────────────────────────────────────────
 const stats = [
   { icon: Award, value: '+17', label: 'Años de experiencia', color: '#7DC242' },
-  { icon: Leaf,  value: '+59', label: 'Contratos ejecutados', color: '#00AEEF' },
+  { icon: Leaf,  value: '+115', label: 'Contratos ejecutados', color: '#00AEEF' },
   { icon: Users, value: '+30', label: 'Clientes atendidos',  color: '#7DC242' },
   { icon: Globe, value: '12+', label: 'Departamentos',       color: '#00AEEF' },
 ]
